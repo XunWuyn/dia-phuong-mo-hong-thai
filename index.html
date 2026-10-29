@@ -863,12 +863,12 @@
     // 6 bản ghi mẫu bổ sung (đủ 3 homestay + 3 đặc sản + 3 ẩm thực). Tên, giá, mô tả: DỮ LIỆU MÔ PHỎNG.
     // Ảnh dịch vụ đã cập nhật: chỉ thay khi dữ liệu đã lưu còn dùng đúng ảnh mẫu cũ (không ghi đè ảnh admin tự đổi).
     const SERVICE_IMAGE_UPDATE = {
-      'serv-7': { from: ['https://images.unsplash.com/photo-1587049352846-4a222e784d38?auto=format&fit=crop&w=800&q=80', 'https://lookaside.fbsbx.com/lookaside/crawler/media/?media_id=905394668605009'], to: 'https://congthuongtuyenquang.gov.vn/Images/SanPham/202148101426.jpg' },
-      'serv-1': { from: ['https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=800&q=80'], to: 'http://lehoithanhtuyen.com.vn/images/433622912_122123387162217946_4171681457009869515_n.jpg' },
+      'serv-7': { from: ['https://images.unsplash.com/photo-1587049352846-4a222e784d38?auto=format&fit=crop&w=800&q=80', 'https://lookaside.fbsbx.com/lookaside/crawler/media/?media_id=905394668605009', 'https://congthuongtuyenquang.gov.vn/Images/SanPham/202148101426.jpg'], to: 'https://images.unsplash.com/photo-1558642452-9d2a7deb7f62?auto=format&fit=crop&w=800&q=80' },
+      'serv-1': { from: ['https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=800&q=80', 'http://lehoithanhtuyen.com.vn/images/433622912_122123387162217946_4171681457009869515_n.jpg'], to: 'https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=800&q=80' },
       'serv-2': { from: ['https://images.unsplash.com/photo-1576092768241-dec231879fc3?auto=format&fit=crop&w=800&q=80'], to: 'https://static.kinhtedouong.vn/w640/images/upload/10312023/2021548324_16419_41efe609.jpg' },
       'serv-3': { from: ['https://images.unsplash.com/photo-1555396273-367ea4eb4db5?auto=format&fit=crop&w=800&q=80', 'https://baotuyenquang.com.vn/file/4028eaa4679b32c401679c0c74382a7e/022026/an-tuong-am-thuc-vung-cao-hong-thai-1_20260228213748.jpg'], to: 'https://taybac.tv/wp-content/uploads/2023/08/2b1-1200x800.jpg' },
       'serv-6': { from: ['https://images.unsplash.com/photo-1564890369478-c89ca6d9cde9?auto=format&fit=crop&w=800&q=80'], to: 'https://dacsannahang.com.vn/wp-content/uploads/2021/03/z4938204794925_451b9460ceec40fe23d9ec59582135a6.jpg' },
-      'serv-8': { from: ['https://images.unsplash.com/photo-1546069901-ba9599a7e63c?auto=format&fit=crop&w=800&q=80', 'https://baotuyenquang.com.vn/file/4028eaa4679b32c401679c0c74382a7e/022026/an-tuong-am-thuc-vung-cao-hong-thai-1_20260228213748.jpg'], to: 'https://nongthon.vietnamtourism.gov.vn/wp-content/uploads/2024/06/1806.Tuyen-Quang-1-1.jpg' },
+      'serv-8': { from: ['https://images.unsplash.com/photo-1546069901-ba9599a7e63c?auto=format&fit=crop&w=800&q=80', 'https://baotuyenquang.com.vn/file/4028eaa4679b32c401679c0c74382a7e/022026/an-tuong-am-thuc-vung-cao-hong-thai-1_20260228213748.jpg', 'https://nongthon.vietnamtourism.gov.vn/wp-content/uploads/2024/06/1806.Tuyen-Quang-1-1.jpg'], to: 'https://images.unsplash.com/photo-1546069901-ba9599a7e63c?auto=format&fit=crop&w=800&q=80' },
       'serv-9': { from: ['https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=800&q=80'], to: 'https://baotuyenquang.com.vn/file/4028eaa4679b32c401679c0c74382a7e/022026/an-tuong-am-thuc-vung-cao-hong-thai-1_20260228213748.jpg' }
     };
     const NEW_SERVICES = [
@@ -900,7 +900,7 @@
       },
       {
         id: 'serv-7', title: 'Mật ong rừng vùng cao', category: 'Đặc sản', village: 'Hồng Thái', price: '180.000đ / chai',
-        image: 'https://congthuongtuyenquang.gov.vn/Images/SanPham/202148101426.jpg',
+        image: 'https://images.unsplash.com/photo-1558642452-9d2a7deb7f62?auto=format&fit=crop&w=800&q=80',
         description: 'Sản phẩm mật ong mô phỏng dạng chai, giới thiệu như một đặc sản vùng cao. Nguồn gốc, loại hoa, chứng nhận chất lượng và an toàn thực phẩm chưa được xác minh.',
         packaging: 'Chai (dung tích chưa xác minh)', origin: 'Chưa xác minh nguồn gốc',
         status: 'published',
@@ -908,7 +908,7 @@
       },
       {
         id: 'serv-8', title: 'Bếp Nhà Sàn', category: 'Ẩm thực', village: 'Hồng Thái', price: 'Từ 120.000đ / suất',
-        image: 'https://nongthon.vietnamtourism.gov.vn/wp-content/uploads/2024/06/1806.Tuyen-Quang-1-1.jpg',
+        image: 'https://images.unsplash.com/photo-1546069901-ba9599a7e63c?auto=format&fit=crop&w=800&q=80',
         description: 'Hồ sơ mô phỏng về bếp phục vụ mâm cơm phong cách vùng cao, dành cho khách đặt trước. Thực đơn, giá và hình thức phục vụ chỉ là minh họa.',
         dishes: ['Suất cơm vùng cao', 'Suất cơm có món nướng', 'Mâm cơm nhóm (đặt trước)'],
         menu: [
@@ -1082,7 +1082,7 @@
           price: '200.000đ / đêm',
           rating: 4.8,
           phone: '0987.654.321',
-          image: 'http://lehoithanhtuyen.com.vn/images/433622912_122123387162217946_4171681457009869515_n.jpg',
+          image: 'https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=800&q=80',
           description: 'Trải nghiệm ngủ nhà sàn, ăn món ăn bản địa, ngắm view trọn vẹn thung lũng mây.',
           status: 'published'
         },
@@ -2306,6 +2306,7 @@
               muted
               loop
               playsInline
+              webkit-playsinline="true"
               preload="auto"
               aria-label="Toàn cảnh ruộng bậc thang và bản làng Hồng Thái nhìn từ trên cao"
             ></video>
